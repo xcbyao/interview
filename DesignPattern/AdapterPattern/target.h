@@ -5,11 +5,11 @@
 #ifndef DESIGNPATTERN_TARGET_H
 #define DESIGNPATTERN_TARGET_H
 
-// Sockets provided by Russia
+// 俄罗斯提供的插座
 class IRussiaSocket
 {
 public:
-    // Use both feet to charge in a round shape (not implemented yet)
+    // 使用双脚圆形充电（暂不实现）
     virtual void Charge() = 0;
 };
 

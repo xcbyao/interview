@@ -8,43 +8,43 @@
 #include "abstraction.h"
 #include <iostream>
 
-// Zipper switch
+// 拉链式开关
 class PullChainSwitch : public ISwitch
 {
 public:
     PullChainSwitch(IElectricalEquipment *ee) : ISwitch(ee) {}
 
-    // Turn on the equipment with a zipper switch
+    // 用拉链式开关打开电器
     virtual void On() override
     {
-        std::cout << "Turn on the equipment with a zipper switch." << std::endl;
+        std::cout << "Switch on the equipment with a pull chain switch." << std::endl;
         m_pEe->PowerOn();
     }
 
-    // Turn off the equipment with a zipper switch
+    // 用拉链式开关关闭电器
     virtual void Off() override
     {
-        std::cout << "Turn off the equipment with a zipper switch." << std::endl;
+        std::cout << "Switch off the equipment with a pull chain switch." << std::endl;
         m_pEe->PowerOff();
     }
 };
 
-// Two-position switch
+// 两位开关
 class TwoPositionSwitch : public ISwitch
 {
 public:
     TwoPositionSwitch(IElectricalEquipment *ee) : ISwitch(ee) {}
 
-    // Turn on the equipment with a two-position switch
+    // 用两位开关打开电器
     virtual void On() override
     {
-        std::cout << "Turn on the equipment with a two-position switch." << std::endl;
+        std::cout << "Switch on the equipment with a two-position switch." << std::endl;
         m_pEe->PowerOn();
     }
 
-    // Turn off the equipment with a two-position switch
+    // 用两位开关关闭电器
     virtual void Off() override {
-        std::cout << "Turn off the equipment with a two-position switch." << std::endl;
+        std::cout << "Switch off the equipment with a two-position switch." << std::endl;
         m_pEe->PowerOff();
     }
 };

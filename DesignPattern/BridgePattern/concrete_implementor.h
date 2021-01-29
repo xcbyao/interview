@@ -8,32 +8,32 @@
 #include "implementor.h"
 #include <iostream>
 
-// Electric lights
+// 电灯
 class Light : public IElectricalEquipment
 {
 public:
-    // Turn on the lights
+    // 开灯
     virtual void PowerOn() override
     {
         std::cout << "Light is on." << std::endl;
     }
-    // Turn off the lights
+    // 关灯
     virtual  void PowerOff() override
     {
         std::cout << "Light is off." << std::endl;
     }
 };
 
-// Electric Fan
+// 风扇
 class Fan : public IElectricalEquipment
 {
 public:
-    // Turn on the fan
+    // 打开风扇
     virtual void PowerOn() override
     {
         std::cout << "Fan is on." << std::endl;
     }
-    // Turn off the fan
+    //关闭风扇
     virtual  void PowerOff() override
     {
         std::cout << "Fan is off." << std::endl;

@@ -6,20 +6,20 @@
 
 void BridgeMain()
 {
-    // Create electrical appliances (electric lights, electric fans)
+    // 创建电器（电灯、电风扇）
     IElectricalEquipment * light = new Light();
     IElectricalEquipment * fan = new Fan();
 
-    // Create switch (pull chain switch, two-position switch)
-    // Associating a pull chain switch with a light and a two-position switch with a fan
+    // 创建开关（拉链式开关、两位开关）
+    // 将拉链式开关和电灯关联起来，两位开关和风扇关联起来
     ISwitch * pullChain = new PullChainSwitch(light);
     ISwitch * twoPosition = new TwoPositionSwitch(fan);
 
-    // Lights on, lights off
+    // 开灯、关灯
     pullChain->On();
     pullChain->Off();
 
-    // Turn on the fan, turn off the fan
+    // 打开风扇、关闭风扇
     twoPosition->On();
     twoPosition->Off();
 

@@ -12,7 +12,7 @@
 #define SAFE_DELETE(p) { if(p){delete(p); (p)=NULL;} }
 #endif
 
-// Power Adapter
+// 电源适配器
 class PowerAdapter : public IRussiaSocket
 {
 public:
@@ -23,11 +23,11 @@ public:
     }
     void Charge()
     {
-        // Use the built-in charger (two-pin flat) to charge
+        // 使用自带的充电器（两脚扁形）充电
         m_pCharger->ChargeWithFeetFlat();
     }
 private:
-    // Hold the interface object that needs to be adapted (the built-in charger)
+    // 持有需要被适配的接口对象（自带的充电器）
     OwnCharger* m_pCharger;
 };
 

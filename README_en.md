@@ -500,7 +500,7 @@ int main()
 	A a5 = (A)1;		// OK：Allow explicit conversion of static_cast
 	doA(1);			// OK：Allow implicit conversion from int to A
 	if (a1);		// OK: implicit conversion from A to bool using conversion function A ::operator bool()
-	bool a6(a1);		// OK: implicit conversion from A to bool using conversion function A::operator bool()
+	bool a6（a1）;		// OK: implicit conversion from A to bool using conversion function A::operator bool()
 	bool a7 = a1;		// OK: implicit conversion from A to bool using conversion function A::operator bool()
 	bool a8 = static_cast<bool>(a1);  // OK: static_cast for direct initialization
 
@@ -3384,7 +3384,7 @@ contain:
 
 ## 📝 Interview Question Experience
 
-* [Nowcoder.com's summary of the 2020 autumn tricks! (Post division)](https://www.nowcoder.com/discuss/205497)
+* [Newcoder.com's summary of the 2020 autumn tricks! (Post division)](https://www.nowcoder.com/discuss/205497)
 * [【Preparation for Autumn Moves】 Raiders for 2020 Autumn Moves](https://www.nowcoder.com/discuss/197116)
 * [2019 School Recruitment Summary! 【Daily Update】](https://www.nowcoder.com/discuss/90907)
 * [2019 School Recruitment Technology Posts Summary [Technology]](https://www.nowcoder.com/discuss/146655)
@@ -3392,8 +3392,8 @@ contain:
 * [2017 Autumn Campus Recruitment Pen and Face Summaries](https://www.nowcoder.com/discuss/12805)
 * [The most complete collection of 2017 spring tricks in history!!](https://www.nowcoder.com/discuss/25268)
 * [Interview questions are here](https://www.nowcoder.com/discuss/57978)
-* [zhihu. On the Internet job search, what well-written and attentive face have you seen? It is best to share your own facial and mental journey. ](https://www.zhihu.com/question/29693016)
-* [zhihu. What are the most common interview algorithm questions for internet companies? ](https://www.zhihu.com/question/24964987)
+* [Knowing.. On the Internet job search, what well-written and attentive face have you seen? It is best to share your own facial and mental journey. ](https://www.zhihu.com/question/29693016)
+* [Know. What are the most common interview algorithm questions for internet companies? ](https://www.zhihu.com/question/24964987)
 * [CSDN. C ++ Interview Questions Completely Organized](http://blog.csdn.net/ljzcome/article/details/574158)
 * [CSDN. Baidu R & D interview questions (C ++ direction)](http://blog.csdn.net/Xiongchao99/article/details/74524807?locationNum=6&fps=1)
 * [CSDN. C ++ 30 common interview questions](http://blog.csdn.net/fakine/article/details/51321544)
@@ -3407,7 +3407,7 @@ contain:
 
 ## 📆 Recruiting time posts
 
-* [nowcoder . Enterprise Recruitment Schedule](https://www.nowcoder.com/school/schedule)
+* [Niuke.com 2020 School Recruitment | 2020 IT Enterprise Recruitment Schedule](https://www.nowcoder.com/school/schedule)
 
 <a id="recommend"></a>
 

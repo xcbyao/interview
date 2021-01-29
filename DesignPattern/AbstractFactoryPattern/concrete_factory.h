@@ -8,7 +8,7 @@
 #include "Factory.h"
 #include "concrete_product.h"
 
-// Benz factory
+// 奔驰工厂
 class BenzFactory : public Factory
 {
 public:
@@ -22,7 +22,7 @@ public:
     }
 };
 
-// BMW factory
+// 宝马工厂
 class BmwFactory : public Factory
 {
 public:
@@ -35,7 +35,7 @@ public:
     }
 };
 
-// Audi factory
+// 奥迪工厂
 class AudiFactory : public Factory
 {
 public:

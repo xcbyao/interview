@@ -7,14 +7,14 @@
 
 #include "implementor.h"
 
-// Switch
+// 开关
 class ISwitch
 {
 public:
     ISwitch(IElectricalEquipment *ee){ m_pEe = ee; }
     virtual ~ISwitch(){}
-    virtual void On() = 0;  // Turn on the appliance
-    virtual void Off() = 0;  // Turn off the appliance
+    virtual void On() = 0;  // 打开电器
+    virtual void Off() = 0;  // 关闭电器
 
 protected:
     IElectricalEquipment * m_pEe;

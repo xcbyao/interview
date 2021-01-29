@@ -7,18 +7,18 @@
 
 #include "product.h"
 
-// Abstract factory pattern
+// 抽象工厂模式
 class Factory {
 public:
     enum FACTORY_TYPE {
-        BENZ_FACTORY,   // Benz factory
-        BMW_FACTORY,    // BMW factory
-        AUDI_FACTORY    // Audi factory
+        BENZ_FACTORY,   // 奔驰工厂
+        BMW_FACTORY,    // 宝马工厂
+        AUDI_FACTORY    // 奥迪工厂
     };
 
-    virtual ICar* CreateCar() = 0;      // Production car
-    virtual IBike* CreateBike() = 0;    // Production bicycle
-    static Factory * CreateFactory(FACTORY_TYPE factory); // Create factory
+    virtual ICar* CreateCar() = 0;      // 生产汽车
+    virtual IBike* CreateBike() = 0;    // 生产自行车
+    static Factory * CreateFactory(FACTORY_TYPE factory); // 创建工厂
 };
 
 #endif //DESIGNPATTERN_FACTORY_H

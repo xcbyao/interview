@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-// Built-in charger (two-leg flat type)
+// 自带的充电器（两脚扁型）
 class OwnCharger
 {
 public:

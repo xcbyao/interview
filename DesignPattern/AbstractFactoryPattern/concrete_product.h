@@ -7,8 +7,8 @@
 
 #include "product.h"
 
-/********** Car **********/
-// Benz
+/********** 汽车 **********/
+// 奔驰
 class BenzCar : public ICar
 {
 public:
@@ -18,7 +18,7 @@ public:
     }
 };
 
-// BMW
+// 宝马
 class BmwCar : public ICar
 {
 public:
@@ -28,7 +28,7 @@ public:
     }
 };
 
-// Audi
+// 奥迪
 class AudiCar : public ICar
 {
 public:
@@ -38,8 +38,8 @@ public:
     }
 };
 
-/********** Bicycle **********/
-// Benz
+/********** 自行车 **********/
+// 奔驰
 class BenzBike : public IBike
 {
 public:
@@ -49,7 +49,7 @@ public:
     }
 };
 
-// BMW
+// 宝马
 class BmwBike : public IBike
 {
 public:
@@ -59,7 +59,7 @@ public:
     }
 };
 
-// Audi
+// 奥迪
 class AudiBike : public IBike
 {
 public:
